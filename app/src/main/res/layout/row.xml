@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:padding="10dp"
+
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="60dp"
+
+            android:layout_height="wrap_content"
+            android:text = "[NAMA]"
+            android:layout_columnWeight="2"
+            android:textSize="20sp"
+            android:textColor = "@color/white"
+
+            />
+        <TextView
+
+            android:textSize="20sp"
+            android:id="@+id/tv_qty"
+            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:text = "[QUANTITY]"
+            android:layout_columnWeight="2"
+            android:textColor = "@color/white"
+            />
+
+
+
+    </GridLayout>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "[DESC]"
+        android:textColor = "@color/white"
+        />
+
+</LinearLayout>
