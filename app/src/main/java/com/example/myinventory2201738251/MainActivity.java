@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements InvMain{
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddActivity.class);
                 startActivity(intent);
-                loadInventory();
+//                loadInventory();
 //                showInventory();
             }
         });
