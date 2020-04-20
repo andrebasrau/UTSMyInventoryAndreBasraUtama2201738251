@@ -42,6 +42,21 @@ public class UpdateActivity extends AppCompatActivity {
                 String name = et_name.getText().toString();
                 String desc = et_desc.getText().toString();
                 String qty = et_quantity.getText().toString();
+                name.trim();
+                desc.trim();
+                qty.trim();
+                if (name.length() <= 0){
+                    Toast.makeText(UpdateActivity.this, "name must be filled", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (desc.length()<=0){
+                    Toast.makeText(UpdateActivity.this, "desc must be filled", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (qty.length() <= 0){
+                    Toast.makeText(UpdateActivity.this, "quantity must be filled", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 InvMain.IB.updateData(name, desc, qty, position);
                 finish();
 
